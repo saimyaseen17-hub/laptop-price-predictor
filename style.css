@@ -1,0 +1,379 @@
+/* =========================================================
+   LAPTOP PRICE PREDICTOR
+   PROFESSIONAL DARK UI
+   ========================================================= */
+
+
+/* =========================================================
+   MAIN APP BACKGROUND
+   ========================================================= */
+
+.stApp {
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(37, 99, 235, 0.16),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 90% 20%,
+            rgba(124, 58, 237, 0.14),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #070b14 0%,
+            #0b1220 50%,
+            #070b14 100%
+        );
+
+    color: #f8fafc;
+}
+
+
+/* =========================================================
+   HIDE STREAMLIT DEFAULT ELEMENTS
+   ========================================================= */
+
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.block-container {
+    max-width: 1150px;
+
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+h1 {
+    text-align: center;
+
+    font-size: 46px !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 8px !important;
+
+    background: linear-gradient(
+        90deg,
+        #60a5fa,
+        #a78bfa,
+        #f472b6
+    );
+
+    background-clip: text;
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   SUBTITLE / TEXT
+   ========================================================= */
+
+.stApp p {
+    color: #aeb9cc;
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h2,
+h3 {
+    color: #f8fafc !important;
+
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   DIVIDERS
+   ========================================================= */
+
+hr {
+    border: none !important;
+
+    height: 1px !important;
+
+    background: rgba(255, 255, 255, 0.08) !important;
+
+    margin: 25px 0 !important;
+}
+
+
+/* =========================================================
+   LABELS
+   ========================================================= */
+
+label {
+    color: #dbeafe !important;
+
+    font-weight: 600 !important;
+
+    font-size: 14px !important;
+}
+
+
+/* =========================================================
+   SELECT BOX
+   ========================================================= */
+
+div[data-baseweb="select"] > div {
+    background-color: rgba(15, 23, 42, 0.85) !important;
+
+    border: 1px solid rgba(148, 163, 184, 0.20) !important;
+
+    border-radius: 12px !important;
+
+    min-height: 46px;
+
+    color: #ffffff !important;
+
+    transition: all 0.2s ease;
+}
+
+
+/* =========================================================
+   SELECT BOX HOVER
+   ========================================================= */
+
+div[data-baseweb="select"] > div:hover {
+    border-color: rgba(96, 165, 250, 0.60) !important;
+
+    box-shadow:
+        0 0 0 2px rgba(59, 130, 246, 0.08);
+}
+
+
+/* =========================================================
+   SELECTED TEXT
+   ========================================================= */
+
+div[data-baseweb="select"] span {
+    color: #f8fafc !important;
+}
+
+
+/* =========================================================
+   DROPDOWN MENU
+   ========================================================= */
+
+ul[role="listbox"] {
+    background-color: #111827 !important;
+
+    border: 1px solid rgba(148, 163, 184, 0.15) !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* =========================================================
+   DROPDOWN OPTIONS
+   ========================================================= */
+
+li[role="option"] {
+    color: #f8fafc !important;
+
+    background-color: #111827 !important;
+}
+
+
+/* =========================================================
+   DROPDOWN OPTION HOVER
+   ========================================================= */
+
+li[role="option"]:hover {
+    background-color: #1e3a5f !important;
+}
+
+
+/* =========================================================
+   PREDICTION BUTTON
+   ========================================================= */
+
+.stButton > button {
+    width: 100%;
+
+    height: 55px;
+
+    border: none !important;
+
+    border-radius: 14px !important;
+
+    font-size: 17px !important;
+
+    font-weight: 700 !important;
+
+    color: white !important;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    ) !important;
+
+    box-shadow:
+        0 10px 30px rgba(37, 99, 235, 0.28);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+   ========================================================= */
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 15px 35px rgba(124, 58, 237, 0.40);
+}
+
+
+/* =========================================================
+   BUTTON ACTIVE
+   ========================================================= */
+
+.stButton > button:active {
+    transform: translateY(0px);
+}
+
+
+/* =========================================================
+   SUCCESS RESULT
+   ========================================================= */
+
+div[data-testid="stAlert"] {
+    border-radius: 14px !important;
+
+    border: 1px solid rgba(96, 165, 250, 0.25) !important;
+
+    background: rgba(37, 99, 235, 0.10) !important;
+}
+
+
+/* =========================================================
+   ALERT TEXT
+   ========================================================= */
+
+div[data-testid="stAlert"] p {
+    color: #dbeafe !important;
+}
+
+
+/* =========================================================
+   COLUMNS
+   ========================================================= */
+
+div[data-testid="column"] {
+    padding-left: 8px;
+
+    padding-right: 8px;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.stCaption {
+    text-align: center !important;
+
+    color: #64748b !important;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #070b14;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+
+/* =========================================================
+   INPUT FOCUS
+   ========================================================= */
+
+input:focus {
+    border-color: #60a5fa !important;
+
+    box-shadow:
+        0 0 0 2px rgba(96, 165, 250, 0.15) !important;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 34px !important;
+    }
+
+    .block-container {
+        padding-left: 1rem;
+
+        padding-right: 1rem;
+    }
+
+    div[data-testid="column"] {
+        padding-left: 0;
+
+        padding-right: 0;
+    }
+
+    .stButton > button {
+        height: 52px;
+
+        font-size: 16px !important;
+    }
+}
